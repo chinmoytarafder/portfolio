@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control and Aerodynamic Analysis of Oblique Wing Aircraft</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="skip-container">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+    </div>
+        <header>
+         <h1>Control and Aerodynamic Analysis of Oblique Wing Aircraft</h1>
+    </header>
+    
+    <nav>
+        <a href="../index.html">Home</a>
+    </nav>
+
+    <main id="main-content" class="container">
+        <section>
+            <h3>Introduction</h3>
+            <p>
+                Oblique Wing Aircraft (OWA) offer a unique design advantage with their asymmetric wings, reducing drag and improving aerodynamic efficiency. However, these benefits come with significant challenges, particularly in controlling coupled flight dynamics such as roll, pitch, and yaw. This project sought to address these challenges by designing and validating a control algorithm to mitigate these coupling effects.
+            </p>
+            <p>
+                The study combined computational and experimental methods, including wind tunnel testing and Computational Fluid Dynamics (CFD), to analyze flight characteristics and develop an effective control strategy. The results aim to inform future designs and applications of oblique wing technology in both commercial and military aviation.
+            </p>
+        </section>
+        
+        <section>
+            <h3>Methodology</h3>
+            <p>
+                To study the aerodynamic and control characteristics of OWA, a physical model featuring a pivoting NACA 2412 wing was fabricated. The wing was capable of sweep angles ranging from 0° to 80°, with control surfaces connected to servos operated by an Arduino Nano.
+            </p>
+            <ul>
+                <li><strong>Wind Tunnel Testing:</strong> Conducted in a 5'x7' low-turbulence wind tunnel to measure force and moment coefficients across various configurations.</li>
+                <li><strong>CFD Simulations:</strong> Used Siemens STAR-CCM+ software to validate physical test results and explore additional aerodynamic effects.</li>
+                <li><strong>Data Analysis:</strong> Employed JMP Pro software to derive numerical relationships between control inputs and aerodynamic responses.</li>
+            </ul>
+            <p>
+                Both methods provided complementary insights, allowing the team to identify outliers, refine control algorithms, and validate results through cross-comparison.
+            </p>
+        </section>
+
+        <section>
+            <h3>Results and Key Findings</h3>
+            <p>
+                The control algorithm demonstrated high accuracy in predicting moment coefficients across defined Reynolds numbers and sweep angles. Validation tests confirmed that desired aerodynamic states could be achieved by optimizing control surface deflections. Key observations include:
+            </p>
+            <ul>
+                <li>Residuals for roll, pitch, and yaw coefficients were minimal, indicating reliable algorithm performance.</li>
+                <li>Wind tunnel data and CFD results were consistent, with minor deviations attributed to model imperfections.</li>
+                <li>Yaw and pitch coefficients showed better predictability than roll, suggesting areas for further refinement.</li>
+            </ul>
+            <p>
+                Despite the success, some limitations were identified, such as sensitivity to higher flow speeds and the effects of angle-of-attack variations, which require additional testing.
+            </p>
+        </section>
+
+        <section>
+            <h3>Recommendations for Future Research</h3>
+            <p>
+                The study highlighted the potential of oblique wing designs for improving aerodynamic efficiency while addressing control challenges. Recommendations for future work include:
+            </p>
+            <ul>
+                <li>Develop higher-fidelity physical models with improved materials and structural integrity.</li>
+                <li>Conduct additional wind tunnel tests, exploring angle-of-attack and bank angle effects.</li>
+                <li>Refine CFD simulations with finer mesh quality and expanded data sets for better accuracy.</li>
+                <li>Explore integration of a full fly-by-wire control system for enhanced stability and performance.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Conclusion</h3>
+            <p>
+                This project successfully demonstrated the feasibility of mitigating roll-pitch-yaw coupling in OWA using a data-driven control algorithm. By combining experimental and computational approaches, the team validated key aerodynamic principles and laid the groundwork for future advancements in oblique wing technology.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Chinmoy Tarafder. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
