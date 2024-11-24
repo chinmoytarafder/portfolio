@@ -116,6 +116,13 @@ p,li{
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
 }
 
+.lightbox-content {
+    width:80%;
+    height: 30%;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space between image and caption */
+}
+
 .project img:hover {
     transform: scale(1.05); /* Slightly enlarge the image */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
@@ -252,6 +259,13 @@ footer p {
     footer p {
         font-size: 1vw; /* Adjust font size */
     }
+    
+    .lightbox-content {
+        width:70%;
+        height: 80%;
+        border-radius: 10px;
+        margin-bottom: 10px; /* Space between image and caption */
+    }
 }
 
 /* Larger Screens (Desktop and above) */
@@ -287,6 +301,7 @@ footer p {
     p,li{
         font-size: 1.5vw;
     }
+
     
 }
 
@@ -396,10 +411,6 @@ body {
     text-align: center; /* Center-align image and caption */
 }
 
-.lightbox-content {
-    border-radius: 10px;
-    margin-bottom: 10px; /* Space between image and caption */
-}
 
 .caption {
     color: white;
