@@ -477,7 +477,7 @@ body {
     border-radius: 50%;
     color: rgba(191, 191, 191, 0.8);
     cursor: pointer;
-    opacity: 0; /* Hidden by default */
+    opacity: 1; /* Hidden by default */
     transition: opacity 0.3s ease, background-color 0.3s ease;
     z-index: 10;
     padding: 0; /* Reset any padding */
